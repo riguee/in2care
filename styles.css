@@ -1,0 +1,193 @@
+body {
+    background: rgba(255,255,255,0.8);
+    color: #526969;
+    font-family: Calibri;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*.row {
+    display: flex;
+}*/
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 30%;
+    padding: 10px;
+    margin: 50px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column p, h1, h2 {
+    color: #5B6268;
+    z-index: 1;
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    font-size: 40px;
+    height: 50px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #41464a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 100%;
+}
+
+.topnav a:hover {
+    color: #E01AB3;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: white;
+    font-weight: bold;
+    background-color: lightgrey;
+    width: 13%
+}
+
+.topnav a.active:hover {
+    background-color: darkgrey;
+    color: #c7c4c7;
+}
+
+.column.left a {
+    color: #5EA6AD;
+    background: #5B6268;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: auto;
+
+
+}
+
+.column.right a {
+    color: #D4AFBB;
+    background: #5B6268;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: auto;
+}
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url("background4.jpg");
+
+    /* Set a specific height */
+    min-height: 200px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 0px;
+}
+
+.fixed {
+    position: fixed;
+    left: 3%;
+    top: 100px;
+    height: 50px;
+    z-index: 1;
+}
+
+h1, h2 {
+    font-size: 30px;
+    color: #5B6268;
+    text-align: center;
+    opacity: 1;
+
+}
+
+
+
+.intro {
+    position: relative;
+    text-align: center;
+    top:100px;
+    margin: auto;
+    padding-bottom: 100px;
+    width: 60%;
+    height: auto;
+}
+
+.text {
+}
+
+.left {
+    margin: 10px;
+}
+
+.right {
+    margin: 10px;
+}
+
+.left:hover {
+    background : rgba(91, 98, 104, 0.31);
+}
+.right:hover {
+    background : rgba(91, 98, 104, 0.31);
+}
+
+.quiz {
+    position: relative;
+    top: 50px;
+    width: 60%;
+    margin: auto;
+}
+
+.list-group-item.active {
+    background-color: #5EA6AD!important;
+    border-color: #5EA6AD!important;
+}
+
+.map {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    top: 10px;
+    margin: auto;
+    border-color: #5B6268;
+    border-radius: 30px;
+}
+
+.carousel-item.img {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    padding: 5px;
+    width: 500px;
+}
+
+.testimony {
+    background: rgba(94, 166, 173, 0.42);
+    font-size: medium;
+    min-height: fit-content;
+}
+
+.steps {
+    margin: 50px;
+}
+
+.formlines {
+    margin-top: 5px;
+}

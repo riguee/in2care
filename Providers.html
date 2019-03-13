@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>providers</title>
+</head>
+<body>
+<script>
+    AOS.init();
+</script>
+
+<div class="topnav" style="position: fixed; width: 100%; background: rgba(255, 255, 255, 0.9); z-index: 1">
+    <a class="active" href=finalhome.html><img src="logo2.png" style="height: 30px; margin:auto"> </a>
+    <a href="#CharityProfileAcct.html">About Us</a>
+    <a href="#charityorder.php">For Providers</a>
+    <a href="#mainlisting.php">Your Journey</a>
+    <a href="#Complaint.php">FAQ</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#signin">Sign In</a>
+</div>
+
+<div class="parallax">
+    <div class="intro">
+        <h2>Who We Are</h2>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.4); top:50px;">
+        <div style="background: white; position: relative; top: 50px;"><br><br><br>
+            <h2>A process in 3 steps to find the best fits to your needs</h2>
+            <div class="col-8 mx-auto" style="top: 60px; bottom: 60px">
+                <div class="row">
+                    <div class="col-2">
+                        <a href="#1" class="btn btn-secondary" style="border-radius: 45%;">1</a>
+                        <div style="padding: 5%">Take a short psychometric test.</div>
+                    </div>
+                    <div class="col-3"><hr></div>
+                    <div class="col-2">
+                        <a href="#2" class="btn btn-secondary" style="border-radius: 45%;">2</a>
+                        <div style="padding: 5%">Submit a video interview.</div>
+                    </div>
+                    <div class="col-3"><hr></div>
+                    <div class="col-2">
+                        <a href="#3" class="btn btn-secondary" style="border-radius: 45%;">3</a>
+                        <div style="padding: 5%">Submit your application documents.</div><br><br><br><br>
+                    </div>
+                </div>
+                <hr/>
+            </div>
+
+            <div id="display_steps">
+            <div class="col-6 mx-auto steps" style="position: relative; top: 50px;" id="1">
+                <div data-aos="fade-right">
+                    <div class="row">
+                        <div class="col-6" style="padding: 15px; height:150px">
+                                    All potential carers first go through a specially developed psychometric test that insures
+                                    that they are adapted to the responsibilities of health care jobs and that they will fit the values of our employers.
+                        </div>
+                        <div class="col-6" >
+                            <img src="quiz.png" style="max-height: 150px; width: auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mx-auto steps" style="position: relative; top: 50px;" id="2">
+                <div data-aos="fade-left">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="video.png" style="max-height: 150px; width: auto">
+                        </div>
+                        <div class="col-6" style="padding: 15px; height: 150px">
+                            All carers then record a video interview that is reviewed by health care professionals.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mx-auto steps" style="position: relative; top: 50px;" id="3">
+                <div data-aos="fade-right">
+                    <div class="row" style="height: 150px">
+                        <div class="col-6"  style="padding: 15px; height: 150px">
+                            All carers then record a video interview that is reviewed by health care professionals.
+                        </div>
+                        <div class="col-6" >
+                            <img src="cv.png" style="max-height: 150px; width: auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div style="background: darkgray; font-size: 0; top: 100px; position: relative; color: white"><br>
+                <form style="font-size: medium; top: 50px; position: relative;">
+                    <div class="form-group">
+                        <div class="col-8 mx-auto">
+                            <div class="row formlines">
+                                <div class="col-2">
+                                    <label for="firstname">First name</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" class="form-control" id="firstname" placeholder="Enter first name">
+                                </div>
+                            </div>
+                            <div class="row formlines">
+                                <div class="col-2">
+                                    <label for="lastname">Last name</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Enter last name">
+                                </div>
+                            </div>
+                            <div class="row formlines">
+                                <div class="col-2">
+                                    <label for="address">address</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                                </div>
+                            </div>
+
+                            <div class="row formlines">
+                                <div class="col-2">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="row formlines">
+                                <div class="col-2">
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="password" class="form-control" id="password"  placeholder="Enter password">
+                                </div>
+                            </div>
+                            <div class="row formlines">
+                                <div class="col-2">
+                                    <label for="password">Repeat password</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="password" class="form-control" id="second_password" placeholder="Retype password">
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

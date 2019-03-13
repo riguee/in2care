@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Become a carer</title>
+</head>
+<body>
+<script>
+    AOS.init();
+</script>
+<div class="topnav" style="position: fixed; width: 100%; background: rgba(255, 255, 255, 0.9); z-index: 1">
+    <a class="active" href=finalhome.html><img src="logo2.png" style="height: 30px; margin:auto"> </a>
+    <a href="#CharityProfileAcct.html">About Us</a>
+    <a href="#charityorder.php">For Providers</a>
+    <a href="#mainlisting.php">Your Journey</a>
+    <a href="#Complaint.php">FAQ</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#signin">Sign In</a>
+</div>
+
+
+<div class="parallax">
+    <div class="paragraph" style="height: auto; position: relative; top: 0; background: rgba(255, 255, 255, 0.5); border: 0; font-size: 0; padding: 20px;"><br>
+        <div class="row intro" style="font-size: medium">
+            <div class="col-4">
+                    <h2>Who you are</h2>
+                    <p>You are a young and passionate individual looking for a meaningful job. You care and blahblahblah</p>
+            </div>
+            <div class="col-4">
+                    <h2>What we are</h2>
+                    <p>We are an organisation that helps employers looking for people with your profile find you.</p>
+            </div>
+            <div class="col-4">
+                    <h2>what you need to do</h2>
+                    <p>In just a few minutes, discover what</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="paragraph" style="height: auto;position: relative;  background: rgba(255, 255, 255, 1); border: 0; font-size: 0; padding: 50px"><br>
+        <div class="col-8 mx-auto" style="top: 30px; bottom: 60px; margin: auto; text-align: center">
+            <h3 style="margin: 50px">A short process, find employers around you in few minutes!</h3><br><br>
+            <div class="row" style="font-size: medium">
+                <div class="col-2">
+                    <a href="#" class="btn btn-secondary" style="border-radius: 45%;">1</a>
+                    <div style="padding: 5%">Take a short psychometric test.</div>
+                </div>
+                <div class="col-3"><hr></div>
+                <div class="col-2">
+                    <a href="#" class="btn btn-secondary" style="border-radius: 45%;">2</a>
+                    <div style="padding: 5%">Submit a video interview.</div>
+                </div>
+                <div class="col-3"><hr></div>
+                <div class="col-2">
+                    <a href="#" class="btn btn-secondary" style="border-radius: 45%;">3</a>
+                    <div style="padding: 5%">Submit your application documents.</div>
+                </div>
+            </div>
+            <h3 style="position: relative; top: 50px;">And that's it!</h3>
+        </div>
+<!--
+        <div class="quiz" style="font-size: medium">
+            <h2>Find out if a job is health care is made for you! Take our short quiz to know more about what health care is and how you would fit in.</h2>
+            <div class="col-10 mx-auto">
+                <div class="list-group">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapsequiz" role="button" aria-expanded="false" aria-controls="collapsequiz">
+                        Cras justo odio
+                    </a>
+                    <div class="collapse multi-collapse" id="collapsequiz">
+                        <form method="post">
+                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+
+    </div>
+</div>
+
+
+
+    <div style="background: rgba(255,255,255,0.3); width: 100%; padding: 30px;">
+        <div class="card col-8 mx-auto" style="background: white">
+            <h2 class="card-title">take a psychometric test</h2>
+            <p>The test is nice<br>You will like it</p>
+        </div>
+    </div>
+
+<div class="card col-8 mx-auto" style="padding:20px">
+    <h2>Find employers near you!</h2>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                })
+            ],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([-0.2, 51.5074]),
+                zoom: 14
+            })
+        });
+    </script>
+    <p style="position: relative; top: 10px;">We will update you with more opportunities</p>
+</div>
+
+</body>
+</html>
